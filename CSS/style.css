@@ -1,0 +1,149 @@
+:root{
+    --primary:  #010626;
+    --secondary: #0B1340;
+    --highlight:  #8B8C8B;
+    --main:  #10241B;
+    --support: #0D0D0D;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+    line-height: 1.6rem;
+    font-size: 16px;
+    font-family: cursive;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem 3rem;
+    /* background-color: #f4f4;
+    border: 1px solid rebeccapurple; */
+    align-items: center;
+    
+}
+.logo{
+    font-size: 1.5rem;
+    font-family: serif;
+    font-weight: bold;
+}
+.links{
+    list-style: none;
+    display: flex;
+}
+.links a{
+    text-decoration: none;
+    margin-right: 1.5rem;
+    color: var(--main);
+    font-weight: bold;
+    transform: translateY(-100);
+    transition: all 3s;
+}
+.links a:hover{
+    color: var(--primary);
+    text-decoration: underline;
+}
+.links a.active{
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 18px;
+    color: var(--main);
+}
+main{
+    /* padding: 3rem; */
+}
+img{
+    width: 100%;
+}
+.hero{
+    background-image: url('../IMAGES/cow.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 3rem;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    margin: 0;
+
+}
+.welcome{
+    margin: 0 30% 0 0 ;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+.welcome h1{
+    font-size: 1.9rem;
+    line-height: 1.9rem;
+}
+.btn-contact{
+    padding: 1rem 1.5rem;
+    border: none;
+    color: #ffffff;
+    background: #811181;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+.btn-contact a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.wel-head{
+    color: var(--primary);
+}
+.welcome h3{
+    /* color: rgb(68, 98, 68); */
+}
+.welcome p{
+    font: 1.1rem;
+    width: 50%;
+}
+.burger .line{
+    width: 28px;
+    height: 4px;
+    background-color: red;
+    margin: 3px;
+}
+.burger{
+    display: none;
+}
+.details{
+    background-color: #f4f4f490;
+    padding: 3rem;
+    margin: 1.4rem;
+    display: flex;
+
+}
+.attribute{
+    display: flex;
+    padding: 3rem;
+}
+.quotes{
+    font-size: 1.9rem;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 1.3rem;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(65, 53, 65);
+    width: 100%;
+    color: white;
+}
+
+@media screen {
+.welcome {
+        /* background: #f4f4f419; */
+
+    }
+}
