@@ -1,35 +1,48 @@
-:root{
-    --primary:  #010626;
-    --secondary: #0B1340;
-    --highlight:  #8B8C8B;
-    --main:  #10241B;
-    --support: #0D0D0D;
-}
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&family=Edu+VIC+WA+NT+Beginner&family=Pacifico&family=Righteous&family=Roboto:wght@100;400&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+:root{
+    --primary:  #08156b;
+    --secondary: #0B1340;
+    --highlight:  #8B8C8B;
+    --main:  #10241B;
+    --support: #0D0D0D;
+    --fottext: Edu VIC WA NT Beginner;
+    --subtext: Edu QLD Beginner;
+    --tough: Pacifico;
+    
+    
+}
+p{
+    font-family: "Righteous";
 }
 .container{
     max-width: 1400px;
     margin: auto;
     line-height: 1.6rem;
     font-size: 16px;
-    font-family: cursive;
+    font-family: 'Robato';
 }
 nav{
     display: flex;
     justify-content: space-between;
     padding: 1.3rem 3rem;
-    /* background-color: #f4f4;
-    border: 1px solid rebeccapurple; */
+    /* background-color: ; */
+    border: 1px solid var(--main);
     align-items: center;
-    
 }
 .logo{
     font-size: 1.5rem;
-    font-family: serif;
-    font-weight: bold;
+    font-family: 'Righteous';
+    color: var(--primary);
+}
+.logo h6{
+    font-size: 1rem;
+    font-family: var(--subtext);
 }
 .links{
     list-style: none;
@@ -39,9 +52,10 @@ nav{
     text-decoration: none;
     margin-right: 1.5rem;
     color: var(--main);
-    font-weight: bold;
+    /* color: #10241B; */
     transform: translateY(-100);
     transition: all 3s;
+    font-family: var(--tough);
 }
 .links a:hover{
     color: var(--primary);
@@ -49,13 +63,11 @@ nav{
 }
 .links a.active{
     background-color: #f4f4f4;
-    padding: 10px;
+    padding: 3px 19px;
     border-radius: 18px;
-    color: var(--main);
+    border: 1px solid #10241B10;
 }
-main{
-    /* padding: 3rem; */
-}
+
 img{
     width: 100%;
 }
@@ -76,16 +88,22 @@ img{
     margin: 0 30% 0 0 ;
     padding: 1.5rem;
     border-radius: 10px;
+    font-family: "Roboto";
 }
 .welcome h1{
     font-size: 1.9rem;
     line-height: 1.9rem;
+    color: var(--primary);
+    font-family: var(--tough);
+}
+.welcome h5{
+    font-family: var(--subtext);
 }
 .btn-contact{
     padding: 1rem 1.5rem;
     border: none;
     color: #ffffff;
-    background: #811181;
+    background: var(--primary);
     border-radius: 5px;
     margin: 1rem 0;
 }
@@ -95,13 +113,15 @@ img{
 }
 .wel-head{
     color: var(--primary);
-}
-.welcome h3{
-    /* color: rgb(68, 98, 68); */
+    text-shadow: rgb(67, 72, 81) 0px 3px 3px;
+    display: inline-block;
+    margin: 10px 0;
 }
 .welcome p{
-    font: 1.1rem;
+    font-size: 1.1rem;
     width: 50%;
+    padding: 1.3rem 0;
+    font-family: var(--subtext);
 }
 .burger .line{
     width: 28px;
@@ -116,16 +136,36 @@ img{
     background-color: #f4f4f490;
     padding: 3rem;
     margin: 1.4rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 
 }
 .attribute{
     display: flex;
     padding: 3rem;
+    /* flex-direction: column; */
+}
+.attribute h3{
+    text-align: right;
+    padding: 1rem;
+}
+.mai, .vc{
+    padding: 1.5rem;
 }
 .quotes{
     font-size: 1.9rem;
     font-family: 'Courier New', Courier, monospace;
+    
+}
+.program{
+    height: 100vh;
+}
+.purpose{
+    padding: 4rem;
+    /* border: 1px solid #010626; */
+    font-family: "Righteous";
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     
 }
 footer{
@@ -141,9 +181,49 @@ footer{
     color: white;
 }
 
-@media screen {
+
+/* CONTACT */
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.contact-section h1{
+    margin: 1.5rem 0;
+}
+.contact-section{
+    margin: 1rem 10rem;
+    padding:  3rem 5rem 5rem 5rem;
+    background-color: #f4f4f4;
+    border-radius: 5rem;
+    border: 1px solid #01062610;
+}
+
+
+
+/* ABOUT US */
+.light-bg{
+    position: fixed;
+    top: 30%;
+    background-color: #f4f4f450;
+    margin: 1rem 10rem;
+    padding:  5rem;
+    border-radius: 5rem;
+    border: 1px solid #01062610;
+}
+
+.about{
+    height: 100vh;
+    background-image: url('../IMAGES/two-cows.jpg');
+    background-position: center;
+    background-size: cover;
+}
+@media only screen and (max-width: 600px) {
 .welcome {
-        /* background: #f4f4f419; */
+        background: #f4f4f419;
+        border: red solid 1px;
 
     }
 }
