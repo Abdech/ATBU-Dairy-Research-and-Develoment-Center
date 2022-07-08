@@ -95,6 +95,7 @@ img{
     line-height: 1.9rem;
     color: var(--primary);
     font-family: var(--tough);
+    font-weight: 100;
 }
 .welcome h5{
     font-family: var(--subtext);
@@ -118,18 +119,19 @@ img{
     margin: 10px 0;
 }
 .welcome p{
-    font-size: 1.1rem;
-    width: 50%;
+    font-size: 1.3rem;
+    width: 70%;
     padding: 1.3rem 0;
-    font-family: var(--subtext);
+    font-family: var(--fottext);
 }
 .burger .line{
     width: 28px;
     height: 4px;
-    background-color: red;
+    background-color: var(--primary);
     margin: 3px;
 }
 .burger{
+    cursor: pointer;
     display: none;
 }
 .details{
@@ -145,17 +147,17 @@ img{
     padding: 3rem;
     /* flex-direction: column; */
 }
+.attribute > div{
+    padding: 1.3rem;
+}
 .attribute h3{
     text-align: right;
-    padding: 1rem;
+    font-family: var(--fottext);
 }
-.mai, .vc{
-    padding: 1.5rem;
-}
+
 .quotes{
     font-size: 1.9rem;
     font-family: 'Courier New', Courier, monospace;
-    
 }
 .program{
     height: 100vh;
@@ -168,6 +170,7 @@ img{
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     
 }
+
 footer{
     display: flex;
     justify-content: center;
@@ -180,6 +183,7 @@ footer{
     width: 100%;
     color: white;
 }
+
 
 
 /* CONTACT */
@@ -203,6 +207,7 @@ footer{
 
 
 
+
 /* ABOUT US */
 .light-bg{
     position: fixed;
@@ -220,10 +225,39 @@ footer{
     background-position: center;
     background-size: cover;
 }
-@media only screen and (max-width: 600px) {
-.welcome {
-        background: #f4f4f419;
-        border: red solid 1px;
-
+@media  screen and (max-width: 900px) {
+    .welcome {
+            margin: 0 0 0 0;
+            padding: 1.5rem;
+            border-radius: 10px;
+    
+        }
+    .burger{
+        display: block;
     }
+    nav .links{
+        display: none;
+    }
+}
+@media  screen and (max-width: 700px) {
+.welcome {
+        margin: 0 0 0 0;
+        padding: 1.5rem;
+        border-radius: 10px 100px 10px 0;
+        border: #ffffff25 solid 1px;
+        background-color: #f4f4f425;
+    }
+.welcome p {
+    width: 80%;
+    text-shadow: #ffffff 0px 3px 3px;
+    font-weight: bold;
+    /* font-style: italic; */
+
+}
+.logo {
+    font-size: 1rem;
+}
+.hero{
+    padding: 1rem;
+}   
 }
