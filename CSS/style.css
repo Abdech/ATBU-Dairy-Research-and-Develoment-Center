@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font_family: 'Righteous';
 }
 :root{
     --primary:  #08156b;
@@ -192,35 +193,65 @@ footer{
 
 /* CONTACT */
 .contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
+    background-image: url('../IMAGES/milking.jpg');
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    height: 100vh;
+    /* color: #ffffff99; */
 }
-.contact-section h1{
-    margin: 1.5rem 0;
+.contact-section h3{
+    font-size: 1.9rem;
+    padding: 0 0 1rem 0;
+    color: var(--primary);
+    text-shadow: #ffffff 0px 3px 3px;
+}
+.contact-heading{
+    text-shadow: #ffffff 0px 3px 3px;
+    font-size: 1.3rem;
+
 }
 .contact-section{
-    margin: 1rem 10rem;
-    padding:  3rem 5rem 5rem 5rem;
+    position: fixed;
+    margin: 1rem 5rem;
+    max-width: 70%;
+    padding:  1.5rem;
     background-color: #f4f4f4;
-    border-radius: 5rem;
+    /* background-color: #08156b99; */
+    border-radius: 1rem;
     border: 1px solid #01062610;
-}
 
+}
+address{
+    font-size: 1.3rem;
+}
 
 
 
 /* ABOUT US */
 .light-bg{
-    position: fixed;
-    top: 30%;
-    background-color: #f4f4f450;
+    
+    /* position: fixed; */
+    background-color: #f4f4f499;
+    color: var(--primary);
     margin: 1rem 10rem;
-    padding:  5rem;
-    border-radius: 5rem;
+    padding:  1rem;
+    border-radius: 1rem;
     border: 1px solid #01062610;
+    max-width: 70%;
+    z-index: 1;
+    /* line-height: 1; */
+}
+.light-bg h3{
+    padding: 1rem 0 0 1rem;
+    font-size: 1.9rem;
+}
+.light-bg p{
+    font-size: 1.4rem;
+    padding:4px 1.1rem;
+    text-align: justify;
 }
 
 .about{
@@ -228,8 +259,11 @@ footer{
     background-image: url('../IMAGES/two-cows.jpg');
     background-position: center;
     background-size: cover;
+    display: flex;
+        justify-content: center;
+        align-items: center;
 }
-@media  screen and (max-width: 900px) {
+@media  screen and (max-width: 940px) {
     body{
         overflow-x: hidden;
     }
@@ -322,6 +356,28 @@ footer{
 .hero{
     padding: 1rem;
 }   
+
+/* ABOUT US */
+.light-bg {
+    margin: 1rem 3rem;
+    max-width: 99%;
+}
+
+.light-bg h3 {
+    padding: .1rem 0 0 1rem;
+    font-size: 1.4rem;
+}
+
+.light-bg p {
+    font-size: 1.3rem;
+    padding:1rem 1rem;
+}
+
+/* CONTACT */
+.contact-section {
+    margin: 1rem 0;
+    max-width: 90%;
+}
 }
 
 /* Tiny phones */
@@ -333,6 +389,9 @@ footer{
     }
 .welcome p {
     width: 100%;
+}
+.light-bg {
+    margin: 1rem 1rem;
 }
 
 }
